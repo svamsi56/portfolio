@@ -1,0 +1,38 @@
+$activeColor : #50c5e8;
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    ul.nav-list{
+        margin: 1.3em 4em;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 300px;
+        max-width: 300px;
+    }
+    li.nav-list-item{
+        a {
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 500;
+            color: #fff;
+            &:visited{
+                color: #fff;
+            }
+            &:hover{
+                color: $activeColor;
+                border-bottom: 1px solid $activeColor;
+            }
+        }
+        .active-link  {
+            color: $activeColor !important;
+            border-bottom: 1px solid $activeColor;
+        }
+    }
+}
+a {
+    text-decoration: none;
+}

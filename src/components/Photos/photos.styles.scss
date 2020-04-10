@@ -1,0 +1,6 @@
+.photos-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(300px, auto);
+}
